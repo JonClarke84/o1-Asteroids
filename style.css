@@ -1,0 +1,76 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Press Start 2P', cursive;
+    overflow: hidden;
+    color: #ffffff;
+}
+
+#gameCanvas {
+    background: rgba(0, 0, 0, 0.8);
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #00ffff;
+}
+
+#ui {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+#score {
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-shadow: 0 0 5px #00ffff;
+}
+
+#gameOver {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(20, 20, 20, 0.9);
+    padding: 30px;
+    border: 2px solid #ff0000;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 30px #ff0000;
+}
+
+#gameOver.hidden {
+    display: none;
+}
+
+#gameOver h1 {
+    margin-bottom: 20px;
+    color: #ff4444;
+    text-shadow: 0 0 10px #ff0000;
+}
+
+#restartButton {
+    padding: 10px 20px;
+    font-size: 14px;
+    background: #00ffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 10px #00ffff;
+    transition: background 0.3s;
+}
+
+#restartButton:hover {
+    background: #00cccc;
+}
